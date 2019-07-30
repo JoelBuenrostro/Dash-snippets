@@ -12,11 +12,10 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 #App layout, it describes what the applications looks like
 app.layout = html.Div(children=[
-    html.Label('Text Input'),
-    dcc.Input(
+    dcc.Textarea(
         placeholder='',
-        type='text',
-        value=''
+        value='',
+        style={'width': '100%'}
     )
 ])
 
