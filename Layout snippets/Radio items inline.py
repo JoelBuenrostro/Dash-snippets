@@ -19,7 +19,8 @@ app.layout = html.Div([
             {'label': u'Montréal', 'value': 'MTL'},
             {'label': 'San Francisco', 'value': 'SF'}
         ],
-        value='MTL'
+        value='MTL',
+        labelStyle={'display': 'inline-block'}
     )
 ])
 
