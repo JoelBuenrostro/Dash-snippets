@@ -12,7 +12,7 @@ app.layout = html.Div([
     dcc.Slider(
         min=0,
         max=9,
-        marks={i: 'Label {}'.format(i) if i == 1 else str(i) for i in range(1, 6)},
+        step=0.5,
         value=5,
     )
 ])
