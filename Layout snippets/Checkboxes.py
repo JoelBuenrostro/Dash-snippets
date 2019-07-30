@@ -8,14 +8,14 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div([
-    html.Label('Checkboxes'),
-    dcc.Checklist(
+    html.Label('Dropdown'),
+    dcc.Dropdown(
         options=[
             {'label': 'New York City', 'value': 'NYC'},
             {'label': u'Montréal', 'value': 'MTL'},
             {'label': 'San Francisco', 'value': 'SF'}
         ],
-        value=['MTL', 'SF']
+        value='MTL'
     )
 ])
 
