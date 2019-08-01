@@ -1,9 +1,13 @@
+# -*- coding: utf-8 -*-
+#Dash imports
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
+#External css style sheet
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
+#Main app
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 markdown_text = '''
@@ -16,9 +20,11 @@ Check out their [60 Second Markdown Tutorial](http://commonmark.org/help/)
 if this is your first introduction to Markdown!
 '''
 
+#App layout, it describes what the applications looks like
 app.layout = html.Div([
     dcc.Markdown(children=markdown_text)
 ])
 
+#App server
 if __name__ == '__main__':
     app.run_server(debug=True)
