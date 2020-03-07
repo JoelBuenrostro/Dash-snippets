@@ -1,2 +1,2 @@
 # Dash snippets
- Code blocks for Dash mokups and fast dashboads development
+ Code blocks for Dash mokups and fast dashboards development
